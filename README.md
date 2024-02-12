@@ -1,6 +1,22 @@
 # 20.1.6-Focus-on-Parameters
 
-No editing needed for this one, plug and play
+In JavaScript, function parameters act as placeholders for values that will be passed to the function when called. They allow functions to accept input and perform actions based on that input. 
+```
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+```
+Functions in JavaScript can have multiple parameters separated by commas: 
+```
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(5, 3)); // Output: 8
+```
+
+
+
 
 ```
 //Ex3_Parameters.js
@@ -24,7 +40,6 @@ function draw() {
 
 
 function keyPressed() {
-
     if( key==='r'){
         // roll2Dice();
         rollDice(8,20);
@@ -33,7 +48,6 @@ function keyPressed() {
     if (key ==='p'){
         pipeline();
     }
-
 }//end keyPressed
 
 function pipeline(){
@@ -44,17 +58,11 @@ function pipeline(){
 
     materialsCost(diameter, length);
     capacity(diameter, length);
-
-
-
 }//end pipeline
-
-
 
 function capacity(  d, len){
     let volume = 3.14 * (d/2) * (d/2) * len;
     print("Total capacity: " + volume + " cubic meters.");
-
 }//end capacity
 
 function materialsCost( d, len  ){
@@ -62,26 +70,20 @@ function materialsCost( d, len  ){
     print("Sheet metal costs $50 per square meter");
     print("Total metal needed: " + squareMeters);
     print ("Total Cost: $" + (squareMeters*50)  );
-
 }//end materialsCost
 
 
 
-
 function roll2Dice(){
-    let die1 = floor( random(1,7)  );
-    let die2 = floor( random(1,7)  );
-    print("You rolled a " + die1 + " and a " + die2);
-    print("Total of: " +  (die1+die2) );
+
+
+
 
 }//end roll2Dice
 
 function rollDice( numDice, numSides ){
-    let roll = [];
-    for(let i=0; i<numDice; i++){
-        roll.push(   floor( random(1, numSides+1 ) )   );
-    }
-    print("You rolled: " + roll);
+
+
 
 }//end rollDice
 
